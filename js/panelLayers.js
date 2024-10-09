@@ -70,9 +70,6 @@ var overlayMaps = [
 				opacity: 0.5,
 			},
 			
-			
-			
-
 		]
 	},
 	{
@@ -87,8 +84,6 @@ var overlayMaps = [
 				opacity: 0.5,
 			},
 			
-
-
 		]
 	},
 	{
@@ -109,16 +104,9 @@ var overlayMaps = [
 				opacity: 0.5,
 			},
 			
-
-
 		]
 	},
 	
-	
-	
-	
-
-
 ];
 //panel ambiental
 var infoAmb = [
@@ -142,8 +130,8 @@ var infoAmb = [
 			},
 			{
 				active: false,
-				name: "Suelos",
-				layer: SuelosTipo,
+				name: "Isohietas",
+				layer: DataIso,
 				transparent: true,
 				opacity: 0.5,
 			},
@@ -153,7 +141,15 @@ var infoAmb = [
 				layer: Ecoregion,
 				transparent: true,
 				opacity: 0.5,
-			},{
+			},
+			{
+				active: false,
+				name: "Suelos",
+				layer: SuelosTipo,
+				transparent: true,
+				opacity: 0.5,
+			},
+			{
 				active: false,
 				name: "Niveles de Arsenico (ppb)",
 				layer: DeptoArsenico,

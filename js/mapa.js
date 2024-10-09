@@ -203,3 +203,14 @@ var AreasProtegidas = L.geoJSON(areasprotegidas,
 		}  
 	}
 );
+
+
+var DataIso = L.geoJSON(isohietas,
+	{
+		style: styleIso,
+		// onEachFeature: function (feature, layer) {
+		// 	var content = popupContentIso(feature);
+		// 	layer.bindPopup(content);
+		// }  
+	}
+);
