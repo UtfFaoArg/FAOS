@@ -62,16 +62,18 @@ legend.remove();
 }
 
 
-var sitios = {
-"type": "FeatureCollection",
-"name": "sitios_j",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": 13.0, "x": -66.706694112600005, "y": -23.0709851268, "fna": "Departamento Susques", "nam": "Susques", "NOMBRE_ECO": "Altos Andes", "precipitac": 50.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -66.706694112631453, -23.070985126759865 ] } },
-{ "type": "Feature", "properties": { "id": 14.0, "x": -65.959854558299995, "y": -22.892574143600001, "fna": "Departamento Cochinoca", "nam": "Cochinoca", "NOMBRE_ECO": "Puna", "precipitac": 100.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -65.959854558292946, -22.892574143584426 ] } },
-{ "type": "Feature", "properties": { "id": 16.0, "x": -65.131072148100003, "y": -24.3745651835, "fna": "Departamento El Carmen", "nam": "El Carmen", "NOMBRE_ECO": "Selva de las Yungas", "precipitac": 2000.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -65.131072148143772, -24.374565183537747 ] } },
-{ "type": "Feature", "properties": { "id": 17.0, "x": -64.744836092100002, "y": -23.786867153799999, "fna": "Departamento Ledesma", "nam": "Ledesma", "NOMBRE_ECO": "Selva de las Yungas", "precipitac": 2000.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -64.744836092101551, -23.786867153797509 ] } },
-{ "type": "Feature", "properties": { "id": 18.0, "x": -64.300553518800001, "y": -23.977182082, "fna": "Departamento Santa Bárbara", "nam": "Santa Bárbara", "NOMBRE_ECO": "Selva de las Yungas", "precipitac": 2000.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -64.300553518813942, -23.977182081982612 ] } },
-{ "type": "Feature", "properties": { "id": 29.0, "x": -64.853715114099998, "y": -24.2002846699, "fna": "Departamento San Pedro", "nam": "San Pedro", "NOMBRE_ECO": "Chaco Seco", "precipitac": 500.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -64.853715114148031, -24.200284669853581 ] } }
-]
-}
+var sitios = 
+{
+    "type": "FeatureCollection",
+    "name": "pto_priorizados",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+    { "type": "Feature", "properties": { "id": 19.0, "x": -62.712407534500002, "y": -22.279349394800001, "fna": "Departamento Rivadavia", "nam": "Rivadavia", "NOMBRE_ECO": "Chaco Seco", "precipitac": 500.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -62.712407534539444, -22.279349394774641 ] } },
+    { "type": "Feature", "properties": { "id": 20.0, "x": -63.789162297799997, "y": -22.4959894592, "fna": "Departamento General José de San Martín", "nam": "General José de San Martín", "NOMBRE_ECO": "Selva de las Yungas", "precipitac": 2000.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -63.789162297789098, -22.495989459224621 ] } },
+    { "type": "Feature", "properties": { "id": 21.0, "x": -63.751620047599999, "y": -22.229567687900001, "fna": "Departamento General José de San Martín", "nam": "General José de San Martín", "NOMBRE_ECO": "Selva de las Yungas", "precipitac": 2000.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -63.7516200476189, -22.229567687889443 ] } },
+    { "type": "Feature", "properties": { "id": 23.0, "x": -64.012638078699993, "y": -24.370216727100001, "fna": "Departamento Anta", "nam": "Anta", "NOMBRE_ECO": "Selva de las Yungas", "precipitac": 2000.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -64.012638078718979, -24.370216727116393 ] } },
+    { "type": "Feature", "properties": { "id": 24.0, "x": -66.242309493199997, "y": -25.324611877799999, "fna": "Departamento Molinos", "nam": "Molinos", "NOMBRE_ECO": "Monte de Sierras y Bolsones", "precipitac": 400.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -66.242309493243951, -25.32461187779932 ] } },
+    { "type": "Feature", "properties": { "id": 26.0, "x": -62.896447210399998, "y": -23.478998840399999, "fna": "Departamento Rivadavia", "nam": "Rivadavia", "NOMBRE_ECO": "Chaco Seco", "precipitac": 500.0, "provincia": null }, "geometry": { "type": "Point", "coordinates": [ -62.896447210378213, -23.478998840359075 ] } }
+    ]
+    }
+    

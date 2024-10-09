@@ -62,14 +62,18 @@ legend.remove();
     map.on('overlayadd overlayremove', toggleLegend);
 }
 
-var SMN = {
-"type": "FeatureCollection",
-"name": "esmn_j",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "lat": "-24 23", "long": "-65 5", "ALT": 905, "NRO": 87046, "PROVINCIA": "JUJUY", "NOMBRE_ECO": "Chaco Seco", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -65.083333333333329, -24.383333333333333 ] } },
-{ "type": "Feature", "properties": { "lat": "-24 10", "long": "-65 11", "ALT": 1302, "NRO": 87043, "PROVINCIA": "JUJUY", "NOMBRE_ECO": "Chaco Seco", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -65.183333333333337, -24.166666666666668 ] } },
-{ "type": "Feature", "properties": { "lat": "-22 6", "long": "-65 36", "ALT": 3459, "NRO": 87007, "PROVINCIA": "JUJUY", "NOMBRE_ECO": "Puna", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -65.6, -22.1 ] } }
-]
-}
+var SMN = 
+{
+    "type": "FeatureCollection",
+    "name": "esmn_s",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+    { "type": "Feature", "properties": { "lat": "-25 29", "long": "-64 48", "ALT": 855, "NRO": 87050, "PROVINCIA": "SALTA", "NOMBRE_ECO": "Chaco Seco", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -64.8, -25.483333333333334 ] } },
+    { "type": "Feature", "properties": { "lat": "-23 9", "long": "-64 19", "ALT": 357, "NRO": 87016, "PROVINCIA": "SALTA", "NOMBRE_ECO": "Selva de las Yungas", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -64.316666666666663, -23.15 ] } },
+    { "type": "Feature", "properties": { "lat": "-24 10", "long": "-62 54", "ALT": 205, "NRO": 87065, "PROVINCIA": "SALTA", "NOMBRE_ECO": "Chaco Seco", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -62.9, -24.166666666666668 ] } },
+    { "type": "Feature", "properties": { "lat": "-24 51", "long": "-65 29", "ALT": 1221, "NRO": 87047, "PROVINCIA": "SALTA", "NOMBRE_ECO": "Chaco Seco", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -65.483333333333334, -24.85 ] } },
+    { "type": "Feature", "properties": { "lat": "-22 39", "long": "-63 49", "ALT": 450, "NRO": 87022, "PROVINCIA": "SALTA", "NOMBRE_ECO": "Selva de las Yungas", "region": "NOA" }, "geometry": { "type": "Point", "coordinates": [ -63.81666666666667, -22.65 ] } }
+    ]
+    }
+    
 
