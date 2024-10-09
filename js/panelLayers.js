@@ -101,6 +101,12 @@ var overlayMaps = [
 				layer: SitiosSeleccionados,
 				transparent: true,
 				opacity: 0.5,
+			},{
+				active: false,
+				name: "Puntos de AGRI",
+				layer: PuntosAgri,
+				transparent: true,
+				opacity: 0.5,
 			},
 			
 
@@ -151,6 +157,13 @@ var infoAmb = [
 				active: false,
 				name: "Niveles de Arsenico (ppb)",
 				layer: DeptoArsenico,
+				transparent: true,
+				opacity: 0.5,
+			},
+			{
+				active: false,
+				name: "Areas Protegidas",
+				layer: AreasProtegidas,
 				transparent: true,
 				opacity: 0.5,
 			},

@@ -178,3 +178,28 @@ var Ecoregion = L.geoJSON(ecorregion,
 		}  
 	}
 );
+
+var PuntosAgri = L.geoJSON(agri,
+	{
+		pointToLayer: function (feature, latlng) {
+			return L.circleMarker(latlng, MarkerOptionsAgri ,
+			);
+
+		},
+ 	style: MarkerOptionsAgri ,
+	 onEachFeature: function (feature, layer) {
+		var content = popupContentAgri(feature);
+		layer.bindPopup(content);
+	}
+		
+	}
+);
+var AreasProtegidas = L.geoJSON(areasprotegidas,
+	{
+		style: styleSuelos,
+		onEachFeature: function (feature, layer) {
+			var content = popupContentSuelos(feature);
+			layer.bindPopup(content);
+		}  
+	}
+);

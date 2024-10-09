@@ -11,7 +11,9 @@ var MarkerOptionsSitios = {
 // // Contenido del popup para cada feature
 function popupContentSitios(feature) {
     return (
-        
+        "<div id='Estilo1'><h3>Sitios para Modelos </h3></div>" +
+        "<hr class='hrx' style='color: #ef7d26;' align='left' noshade='noshade' size='1' width='100%' />" +
+        "<div id='Estilo3a'>" +
         "<div id='Estilo3a'>" +
         "<b> Nombre : </b>" + feature.properties.id + "<br>" +
         // "<b> Habitantes (Censo 2010): </b>" + feature.properties.HABITANTES + "<br>" +
