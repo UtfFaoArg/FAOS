@@ -68,6 +68,7 @@
 
 
 	<!-- en la Carpeta DATA estan los js como capas-->
+	<script type="text/javascript" src="data/fao/prov_contorno.js"></script>
 	<script type="text/javascript" src="data/fao/naf.js"></script>
 	<script type="text/javascript" src="data/fao/proyectos.js"></script>
 	<script type="text/javascript" src="data/fao/poblacion22.js"></script>
@@ -260,7 +261,7 @@
 			center: [-24.29928, -64.81418],
 			zoom: 7,
 			zoomControl: false,
-			layers: [argenmap, Localidad]
+			layers: [argenmap, Localidad, Provincia]
 		});
 
 		// colocar el logo
@@ -346,7 +347,7 @@
 		map.addControl(panelLayers2);
 		// map.addControl(panelLayers7);
 		// map.addControl(panelLayersClimatico);
-		map.addControl(panelLayers5);
+		//map.addControl(panelLayers5);
 
 
 

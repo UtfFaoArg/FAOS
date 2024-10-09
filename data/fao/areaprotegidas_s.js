@@ -1,5 +1,30 @@
 
+function styleAreas(feature) {
+    return {
+      color: "green",
+      weight: 2,
+      opacity: 0.9,
+      dashArray: "0",
+      fillOpacity: 0.9,
+    };
+  }
 
+
+// Contenido del popup para cada feature
+function popupContentAreas(feature) {
+    return (
+        "<div id='Estilo1'><h3>Descripción</h3></div>" +
+        "<hr class='hrx' style='color: #ef7d26;' align='left' noshade='noshade' size='1' width='100%' />" +
+        "<div id='Estilo3a'>" +
+        // "<b> Tipo : </b>" + feature.properties.objeto + "<br>" +
+        "<b> Tipo : </b>" + feature.properties.gna + "<br>" +
+"<b> Denominación : </b>" + feature.properties.nam + "<br>" +
+"<b> Nombre completo : </b>" + feature.properties.fna + "<br>" +
+// "<b> Fuente : </b> Elaborado a partir de Atlas de Agricultura Familiar" + "<br>" +
+"<b> Fuente :  IGN  </b>"  +
+        "</div>"
+    );
+}
 
 
 var areasprotegidas = {

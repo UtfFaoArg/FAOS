@@ -2,31 +2,44 @@
 
 // Función para obtener el color según el tipo de río
 function getColorIso(PREC_ANUAL) {
-    {
-            if (PREC_ANUAL >= 0 && PREC_ANUAL <= 100.0) return "#black";
-            if (PREC_ANUAL > 100.1 && PREC_ANUAL <= 500.0) return "#08519c";
-            if (PREC_ANUAL > 500.1 && PREC_ANUAL <= 1000.0) return "#3182bd";
-            if (PREC_ANUAL > 1000.1 && PREC_ANUAL <= 1500.0) return "#6baed6";
-            if (PREC_ANUAL > 1500.1 && PREC_ANUAL <= 2000.0) return "#bdd7e7";
-            if (PREC_ANUAL > 2000.1) return "#bdd7e7";
-                   }
-        };
-
-
-
+    if (PREC_ANUAL >= 0 && PREC_ANUAL <= 100) return "#ef8a62"; // negro
+    if (PREC_ANUAL > 100 && PREC_ANUAL <= 500) return "#9ecae1";
+    if (PREC_ANUAL > 500 && PREC_ANUAL <= 1000) return "#6baed6";
+    if (PREC_ANUAL > 1000 && PREC_ANUAL <= 1500) return "#4292c6";
+    if (PREC_ANUAL > 1500 && PREC_ANUAL <= 2000) return "#2171b5";
+    if (PREC_ANUAL > 2000) return "#084594";
+}
 
 // Estilo para cada feature del GeoJSON
 function styleIso(feature) {
-    const { color } = getColorIso(feature.properties.PREC_ANUAL);
+    const color = getColorIso(feature.properties.PREC_ANUAL);
 
     return {
         color: color,
         weight: 2,
-        opacity: 0.7,
+        opacity: 1,
         dashArray: '0',
-        fillOpacity: 0.9,
+        fillOpacity: 1,
     };
 }
+
+
+// Contenido del popup para cada feature
+function popupContentIso(feature) {
+    return (
+        "<div id='Estilo1'><h3>Descripción</h3></div>" +
+        "<hr class='hrx' style='color: #ef7d26;' align='left' noshade='noshade' size='1' width='100%' />" +
+        "<div id='Estilo3a'>" +
+        // "<b> Tipo : </b>" + feature.properties.objeto + "<br>" +
+        "<b> Precipitación media anual (mm): </b>" + feature.properties.PREC_ANUAL + "<br>" +
+// "<b> Denominación : </b>" + feature.properties.nam + "<br>" +
+// "<b> Nombre completo : </b>" + feature.properties.fna + "<br>" +
+// "<b> Fuente : </b> Elaborado a partir de Atlas de Agricultura Familiar" + "<br>" +
+"<b> Fuente :  INTA  </b>"  +
+        "</div>"
+    );
+}
+
 
 //Función para generar la leyenda
 function createLegendIso() {
@@ -38,10 +51,14 @@ function createLegendIso() {
 
         // Array con los estilos y sus etiquetas correspondientes
         var styles = [
-            { label: '2000', color: '#bdd7e7', weight: 2  },
-            { label: '1000', color: '#6baed6', weight: 3 },
-            { label: '500', color: '#3182bd', weight: 4 },
-            { label: '100', color: '#08519c', weight: 5 },            // Agrega aquí el resto de estilos con su respectiva etiqueta y color
+            { label: 'Precipitaciones (mm)', color: '', weight: 0  },
+            { label: '> 2000', color: '#084594', weight: 2  },
+            { label: '1900 - 1500', color: '#2171b5', weight: 3 },
+            { label: '1400 - 1000', color: '#4292c6', weight: 4 },
+            { label: '900 - 500', color: '#6baed6', weight: 5 },    
+            { label: '400 - 100', color: '#9ecae1', weight: 5 },  
+            { label: '< 90', color: '#ef8a62', weight: 5 },    
+                  // Agrega aquí el resto de estilos con su respectiva etiqueta y color
         ];
 
         // Genera el contenido HTML de la leyenda

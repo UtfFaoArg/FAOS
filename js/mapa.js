@@ -15,7 +15,9 @@ var argenmap = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0
 	maxZoom: 18,
 });
 
-
+var Provincia = L.geoJSON(prov, {
+	style: SytleProv
+});
 
 var Localidad = L.geoJSON(locCabecera, {
 	pointToLayer: function (feature, latlng) {
@@ -196,9 +198,9 @@ var PuntosAgri = L.geoJSON(agri,
 );
 var AreasProtegidas = L.geoJSON(areasprotegidas,
 	{
-		style: styleSuelos,
+		style: styleAreas,
 		onEachFeature: function (feature, layer) {
-			var content = popupContentSuelos(feature);
+			var content = popupContentAreas(feature);
 			layer.bindPopup(content);
 		}  
 	}
@@ -208,9 +210,9 @@ var AreasProtegidas = L.geoJSON(areasprotegidas,
 var DataIso = L.geoJSON(isohietas,
 	{
 		style: styleIso,
-		// onEachFeature: function (feature, layer) {
-		// 	var content = popupContentIso(feature);
-		// 	layer.bindPopup(content);
-		// }  
+		onEachFeature: function (feature, layer) {
+			var content = popupContentIso(feature);
+			layer.bindPopup(content);
+		}  
 	}
 );
